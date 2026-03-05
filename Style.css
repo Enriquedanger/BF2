@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 2. ESTILOS DE TEXTO Y MEDIOS (Se mantienen igual) */
+h1, h2, h3 {
+    color: #FFE81F; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(255, 232, 31, 0.5); 
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 800px;
+    line-height: 1.5;
+    text-align: wrap; /* ¡Esta es la línea mágica! */
+}
+
+
+img, video, iframe {
+    border: 3px solid #00E5FF; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6); 
+    max-height: 50vh; 
+    max-width: 90%;
+}
+
+
+.navegacion {
+    position: fixed; /* Los pega a la pantalla */
+    bottom: 30px; /* Separación desde abajo */
+    right: 30px; /* Separación desde la derecha */
+    display: flex;
+    gap: 15px; /* Espacio entre el botón de regresar y avanzar */
+}
+
+.btn-nav {
+    background-color: #FFE81F; /* Amarillo Star Wars */
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none; /* Le quita la raya de abajo al enlace */
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #ffffff; /* Se pone blanco al pasar el mouse */
+    box-shadow: 0 0 15px #FFE81F;
+}
+
+/* Botón de WhatsApp específico */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
